@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Smart Waste Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Smart Waste Management</div>
+    <ul class="nav-links">
+      <li><a href="report.html">Report Waste</a></li>
+      <li><a href="my-complaints.html">My Complaints</a></li>
+      <li><a href="segregation.html">Segregation Tips</a></li>
+      <li><a href="index.html" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- DASHBOARD CONTENT -->
+  <div class="dashboard">
+    <h2>👋 Welcome to Smart Waste Management</h2>
+    <p>Choose an option below</p>
+
+    <!-- REPORT WASTE -->
+    <div class="card">
+      <h3>🗑️ Report Waste</h3>
+      <p>Report garbage issues in your area</p>
+      <button onclick="window.location.href='report.html'">
+        Report Now
+      </button>
+    </div>
+
+    <!-- MY COMPLAINTS -->
+    <div class="card">
+      <h3>📋 My Complaints</h3>
+      <p>View your submitted waste reports</p>
+      <button onclick="window.location.href='my-complaints.html'">
+        View Complaints
+      </button>
+    </div>
+
+    <!-- SEGREGATION TIPS -->
+    <div class="card">
+      <h3>♻️ Segregation Tips</h3>
+      <p>Learn how to segregate waste properly</p>
+      <button onclick="window.location.href='segregation.html'">
+        View Tips
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="auth.js"></script>
+
+</body>
+</html>

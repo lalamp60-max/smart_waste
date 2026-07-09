@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Complaints | Smart Waste Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Smart Waste Management</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="report.html">Report Waste</a></li>
+      <li><a href="segregation.html">Segregation Tips</a></li>   
+      <li><a href="index.html" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="dashboard">
+    <h2>📋 My Complaints</h2>
+
+    <div id="complaintsList">
+      <p>Loading complaints...</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="my-complaints.js"></script>
+
+</body>
+</html>

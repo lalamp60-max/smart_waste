@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Waste | Smart Waste Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Smart Waste Management</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="my-complaints.html">My Complaints</a></li>
+      <li><a href="segregation.html">Segregation Tips</a></li>
+      <li><a href="index.html" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- REPORT FORM -->
+  <div class="dashboard">
+    <h2>🗑️ Report Waste</h2>
+
+    <input type="text" id="location" placeholder="Enter Location">
+    <input type="text" id="type" placeholder="Waste Type (Plastic / Wet / Dry)">
+    <textarea id="description" placeholder="Waste Description"></textarea>
+
+    <button class="login-btn" onclick="submitWaste()">Submit Report</button>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="report.js"></script>
+
+</body>
+</html>
